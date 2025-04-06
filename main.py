@@ -134,7 +134,7 @@ async def handle_document(update: Update, context: ContextTypes.DEFAULT_TYPE) ->
 
 def main() -> None:
     # Retrieve the bot token from an environment variable for security.
-    BOT_TOKEN = os.environ.get("")
+    BOT_TOKEN = os.environ.get("TELEGRAM_BOT_TOKEN")
     if not BOT_TOKEN:
         raise ValueError("No TELEGRAM_BOT_TOKEN provided in environment variables!")
     
